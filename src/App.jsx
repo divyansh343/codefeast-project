@@ -12,8 +12,9 @@ function App() {
       setValue("")
     }
   }
-  const handleRemoveItem = () => {
-    
+    const handleRemoveItem = i => {
+      const nl = todos.filter(item => item!== i)
+      setTodos(nl);
   }
   return (
     <>
@@ -154,7 +155,7 @@ function App() {
                           class="ml-4 flex flex-col capitalize text-gray-600
 						dark:text-gray-400">
                           <button>Edit </button>
-                          <button onClick={() => handleRemoveItem(item) }>Delete</button>
+                          <button class="border-2 border-gray-800 rounded-lg px-3 py-2 text-gray-400 cursor-pointer hover:bg-gray-800 hover:text-gray-200" onClick={() => handleRemoveItem(item) }>Delete</button>
                         </div>
                       </div>
                     </>
