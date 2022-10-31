@@ -23,7 +23,6 @@ const Todo = () => {
   //function to update todo
   const updateFieldChanged = (ctext, i) => {
     let index = todos.indexOf(i);
-    console.log(index)
     todos[index] = ctext
   }
 

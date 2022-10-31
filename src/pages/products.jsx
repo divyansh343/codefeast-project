@@ -21,7 +21,6 @@ const Products = () => {
 
   }, [products])
 
-  console.log(products)
   return (
     <main
       class="flex-1 flex flex-col bg-gray-100 dark:bg-gray-700 transition
