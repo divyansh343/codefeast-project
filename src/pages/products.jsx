@@ -33,7 +33,7 @@ const Products = () => {
           <h2 class="text-2xl font-extrabold text-gray-900">Products</h2>
           <section class="mt-6 grid md:grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-8">
             {products &&
-              products.map((product) => (
+              products.slice(0, 100).map((product) => (
                 <div key={product.id}>
                   <article class="bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200">
                     <div class="relative w-full h-80 md:h-64 lg:h-44">
