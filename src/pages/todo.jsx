@@ -76,7 +76,7 @@ const Todo = () => {
           todos &&
           <>
             {
-              todos.reverse().map((item) => (
+              todos.map((item) => (
                 <>
 
                   <div
